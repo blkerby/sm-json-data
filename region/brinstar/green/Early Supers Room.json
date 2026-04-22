@@ -435,6 +435,7 @@
       "name": "Leave Shinecharged (Speed Through)",
       "requires": [
         {"obstaclesNotCleared": ["A"]},
+        "h_speedDash",
         {"canShineCharge": {"usedTiles": 39, "openEnd": 2}},
         "canShinechargeMovementComplex",
         {"shineChargeFrames": 35}

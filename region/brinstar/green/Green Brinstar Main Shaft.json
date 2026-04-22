@@ -1535,7 +1535,8 @@
         "comeInShinecharged": {}
       },
       "requires": [
-        {"shineChargeFrames": 105},
+        "canSpeedyJump",
+        {"shineChargeFrames": 100},
         "HiJump",
         "canWalljump",
         "canShinechargeMovementComplex"
@@ -1558,7 +1559,7 @@
         "comeInShinecharged": {}
       },
       "requires": [
-        {"shineChargeFrames": 130},
+        {"shineChargeFrames": 105},
         "HiJump",
         "canShinechargeMovementComplex"
       ],
@@ -1741,7 +1742,11 @@
       "requires": [
         "HiJump",
         "canShinechargeMovementComplex",
-        {"shineChargeFrames": 65}
+        {"shineChargeFrames": 110},
+        {"or": [
+          "canSpeedyJump",
+          {"shineChargeFrames": 5}
+        ]}
       ],
       "exitCondition": {
         "leaveShinecharged": {}
@@ -1765,7 +1770,7 @@
       },
       "requires": [
         "canShinechargeMovementComplex",
-        {"shineChargeFrames": 160}
+        {"shineChargeFrames": 155}
       ],
       "exitCondition": {
         "leaveShinecharged": {}
@@ -3186,7 +3191,11 @@
       "requires": [
         "HiJump",
         "canShinechargeMovementComplex",
-        {"shineChargeFrames": 100}
+        {"shineChargeFrames": 105},
+        {"or": [
+          "canSpeedyJump",
+          {"shineChargeFrames": 5}
+        ]}
       ],
       "exitCondition": {
         "leaveShinecharged": {}
@@ -3256,7 +3265,7 @@
         "comeInShinecharged": {}
       },
       "requires": [
-        {"shineChargeFrames": 125},
+        {"shineChargeFrames": 120},
         "HiJump",
         "canShinechargeMovementComplex"
       ],
